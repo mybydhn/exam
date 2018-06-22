@@ -1,0 +1,8 @@
+/build/
+/config/
+/dist/
+/static/
+/*.js
+/test/unit/coverage/
+/src/assets/3rdlib/
+/* eslint-disable no-new */

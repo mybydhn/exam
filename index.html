@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>手机考试</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/mathquill.css">
+    <link rel="stylesheet"type="text/css" href="/static/3rdlib/swiper/css/swiper.min.css">
+    <style media="screen" type="text/css">
+      #appLoading { width: 100%; height: calc(100vh);background:url('/static/img/list_bj.png')}
+      #appLoading img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 120px;
+        height: 120px;
+        -webkit-transform: translateY(-50%)  translateX(-50%);
+        transform: translateY(-50%)  translateX(-50%);
+      }
+    </style>
+    <script src="/static/3rdlib/swiper/js/swiper.min.js"></script>
+     
+  </head>
+  <body>
+    <div id="appLoading">
+      <img src="/static/img/loading.gif" alt="loading" />
+    </div>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+     <script>
+      var platform = navigator.userAgent.toLowerCase()
+      var element = document.createElement('script')
+      element.type = 'text/javascript'
+      if (/iphone|ipad|ipod/.test(platform)) {
+        element.src = '/static/3rdlib/cordova/cordova-ios.js'
+      } else if (platform.indexOf('android') > -1 || platform.indexOf('adr') > -1) {
+        element.src = '/static/3rdlib/cordova/cordova-android.js'
+      }
+      document.body.appendChild(element)
+    </script>
+  </body>
+</html>

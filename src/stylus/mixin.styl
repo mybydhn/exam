@@ -1,0 +1,41 @@
+border-top-1px($color = #ccc)
+  position: relative
+  &::after
+    display: block
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    border-top: 1PX solid $color
+    content: ' '
+border-bottom-1px($color = #ccc)
+  position: relative
+  &::after
+    display: block
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 100%
+    border-bottom: 1PX solid $color
+    content: ' '
+clear-float()
+  zoom: 1
+  &:after
+    content: "" //设置内容为空
+    height: 0 //高度为0
+    line-height: 0  //行高为0
+    display: table //将文本转为块级元素
+    visibility: hidden //将元素隐藏
+    clear: both //清除浮动
+bgwrap()
+  position relative
+anlysis-zone()
+  padding 16px
+  margin 20px
+  background url('/static/img/anlysis_bj.png')
+  background-size cover
+  font-size $font-size-medium-x
+  line-height 1.875
+  color $color-default
+  border-radius 4px
+  word-wrap: break-word
